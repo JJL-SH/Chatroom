@@ -5,8 +5,8 @@
   box-sizing: border-box;
 }
 html,body{
-  height: 100%;
   position: relative;
+  font-family: "微软雅黑";
 }
 input[type="text"], textarea {
   -webkit-appearance: none;
@@ -120,6 +120,8 @@ input[type="text"], textarea {
   bottom: 0;
   width: 100%;
   height: 80px;
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
 }
 .footer textarea {
   line-height: 1.5;
@@ -128,11 +130,10 @@ input[type="text"], textarea {
   border: 0;
   outline: 0;
   padding: 10px 70px 10px 10px;
-  border-top: solid 1px #ddd;
 }
 .footer button {
   position: absolute;
-  top: 0;
+  top: -1px;
   right: 0;
   height: 80px;
   border: 0;

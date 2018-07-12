@@ -10,7 +10,7 @@
     </li>
   </ul>
   <div class="footer">
-    <textarea type="text" ng-model="message" ng-keydown="($event.keyCode === 13) && sendMessage()"></textarea>
+    <textarea type="text" ng-model="message" ng-keydown="($event.keyCode === 13) && sendMessage($event)"></textarea>
     <button ng-click="sendMessage()">发送</button>
   </div>
   <div class="pop" ng-show="isFirstEnter">

@@ -21,7 +21,8 @@ app.controller('chatroom', function($scope, $sce) {
     }
     $scope.isFirstEnter = false;
   };
-  $scope.sendMessage = function() {
+  $scope.sendMessage = function(event) {
+    console.log(event);
     if (!$scope.message.trim()) {
       return;
     }
