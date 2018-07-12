@@ -87,7 +87,7 @@ input[type="text"], textarea {
   padding: 5px 15px;
   position: relative;
   margin: 0 50px;
-
+  word-break:break-all;
 }
 .list__icon{
   position: absolute;
@@ -106,8 +106,7 @@ input[type="text"], textarea {
   border:solid 5px transparent;
   border-right-color: #fff;
   left: -10px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 10px;
 }
 .list__block img{
   width: 100%;
