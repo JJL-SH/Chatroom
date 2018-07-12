@@ -7,6 +7,8 @@
 html,body{
   position: relative;
   font-family: "微软雅黑";
+  background: #f3f3f3;
+  height: 100%;
 }
 input[type="text"], textarea {
   -webkit-appearance: none;
@@ -54,7 +56,6 @@ input[type="text"], textarea {
 }
 .list{
   list-style: none;
-  background: #f3f3f3;
   overflow-y: auto;
   margin-bottom: 80px;
 }

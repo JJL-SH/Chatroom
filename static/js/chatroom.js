@@ -39,7 +39,7 @@ app.controller('chatroom', function($scope, $sce) {
       res.isMe = userID === res.userID ? true : false;
       $scope.messageList.push(res);
       setTimeout(function(){
-        document.getElementById('list').scrollTo(0, 999999)
+        window.scrollTo(0, 999999)
       })
     })
   })
