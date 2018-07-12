@@ -53,13 +53,10 @@ input[type="text"], textarea {
   cursor: pointer;
 }
 .list{
-  position: absolute;
-  bottom: 80px;
-  width: 100%;
-  top: 0;
   list-style: none;
   background: #f3f3f3;
   overflow-y: auto;
+  margin-bottom: 80px;
 }
 .list__item{
   margin: 15px 0;
