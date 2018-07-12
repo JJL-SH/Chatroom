@@ -1,0 +1,22 @@
+<div ng-controller='chatroom'>
+  <ul class="list" id="list">
+    <li class="list__item {{item.isMe ? 'list__me' : ''}}" ng-repeat="item in messageList track by $index">
+      <p class="list__block">
+        <span class="list__icon">
+          <img src="{{item.imgUrl}}">
+        </span>
+        {{item.msg}}
+      </p>
+    </li>
+  </ul>
+  <div class="footer">
+    <input type="text" ng-model="message" ng-keydown="($event.keyCode === 13) && sendMessage()">
+    <button ng-click="sendMessage()">发送</button>
+  </div>
+  <div class="pop" ng-show="isFirstEnter">
+    <div class="pop__box">
+      <input class="pop__inp" type="text" placeholder="请输入您的姓名" ng-model="name" ng-keydown="($event.keyCode === 13) && sendName()">
+      <b class="pop__enter" ng-click="sendName()">↵</b>
+    </div>
+  </div>
+</div>

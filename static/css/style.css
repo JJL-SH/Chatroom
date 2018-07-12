@@ -1,0 +1,136 @@
+* {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.pop{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.7);
+}
+.pop__inp{
+  width: 100%;
+  outline: 0;
+  border: 0;
+  font-size: 20px;
+  line-height: 50px;
+  text-indent: 1em;
+}
+.pop__box{
+  position: absolute;
+  width: 50%;
+  height: 50px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.pop__enter{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  top: 0;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: #fff;
+  background: #000;
+  cursor: pointer;
+}
+.list{
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  top: 0;
+  list-style: none;
+  background: #f3f3f3;
+  overflow-y: auto;
+}
+.list__item{
+  margin: 15px 0;
+}
+.list__me{
+  text-align: right;
+}
+.list__me .list__block{
+  margin: 0 50px 0 0;
+  background: #a2e563;
+}
+.list__me .list__block:after{
+  border-color: transparent;
+  border-left-color: #a2e563;
+  right: -10px;
+  left: auto;
+}
+.list__me .list__icon{
+  right: -45px;
+  left: auto;
+}
+.list__block{
+  border-radius: 5px;
+  background: #fff;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 15px;
+  position: relative;
+  margin-left: 50px;
+
+}
+.list__icon{
+  position: absolute;
+  left: -45px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 5px;
+}
+.list__block:after{
+  content: '';
+  position: absolute;
+  height:0;
+  width: 0;
+  border:solid 5px transparent;
+  border-right-color: #fff;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.list__block img{
+  width: 100%;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+}
+.footer input {
+  line-height: 30px;
+  width: 100%;
+  height: 100%;
+  text-indent: 1em;
+  border: 0;
+  outline: 0;
+  border-top: solid 1px #ddd;
+}
+.footer button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  width: 60px;
+  background: #000;
+  color: #fff;
+}

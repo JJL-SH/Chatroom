@@ -1,0 +1,13 @@
+html(lang='en', ng-app='myApp')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+    link(href='/css/style.css', rel='stylesheet')
+  body
+    div(ng-view='')
+script(src='/js/plugins/angular.js')
+script(src='/js/plugins/angular-route.min.js')
+script(src='/js/plugins/socket.io.js')
+script(src='/js/plugins/pnglib.js')
+script(src='/js/plugins/identicon.js')
+script(src='/js/chatroom.js')
